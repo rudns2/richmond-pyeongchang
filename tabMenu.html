@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .tab_wrap{
+      width: 500px;
+      height: 500px;
+      border : 1px solid #ff00ff;
+      margin: 0 auto;
+    }
+    .tab_wrap>div{
+      width: 100%;
+      height: 400px;
+      background-color: antiquewhite;
+    }
+    .tab_list{
+      display: flex;
+    }
+    .tab_list li {
+      list-style: none;
+      flex: 1;
+      border: 1px solid ;
+    }
+    #tab2_txt{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="add"></h2>
+  <h1>
+    <button onclick="addNum(2,3)">버튼</button>
+    <button onclick="alert('test click')">click</button>
+  </h1>
+  
+  <section>
+    <div class="tab_wrap">
+      <ul class="tab_list">
+        <li onclick="tab1()"> tab1 </li>
+        <li onclick="tab2()"> tab2 </li>
+      </ul>
+      <div id="tab1_txt"><h1>tab1</h1></div>
+      <div id="tab2_txt"><h1>tab2</h1></div>
+    </div>
+  </section>
+  
+  <script src="js/javas.js"></script>
+  
+</body>
+</html>
